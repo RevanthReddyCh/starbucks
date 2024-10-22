@@ -9,11 +9,11 @@ pipeline {
         }
        
        
-        stage("Install NPM Dependencies") {
-            steps {
-                sh "npm install"
-            }
-        }
+        // stage("Install NPM Dependencies") {
+        //     steps {
+        //         sh "npm install"
+        //     }
+        // }
        
         stage ("Build Docker Image") {
             steps {
