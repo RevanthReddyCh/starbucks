@@ -43,7 +43,7 @@ pipeline {
         // }
         stage ("Deploy to Conatiner") {
             steps {
-                sh 'docker rm -f '
+                sh 'docker rm -f starbucks'
                 sh 'docker run -d --name starbucks -p 80:3000 starbucks'
             }
         }
